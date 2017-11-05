@@ -1,0 +1,21 @@
+### macOS
+.DS_Store
+
+### IntelliJ
+.idea/
+.idea_modules/
+*.iml
+*.iws
+/out
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+### Maven
+/target
+/log
+
+### dev
+.dev

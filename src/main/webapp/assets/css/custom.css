@@ -1,0 +1,75 @@
+body {
+    padding-bottom: 40px;
+    background-color: #F5F5F5;
+    color: #0A0A0A;
+}
+.has-error {
+    color: #F55757;
+}
+.login-panel {
+    margin: 40px auto;
+    max-width: 420px;
+    background-color: #A8A8A8;
+    -webkit-box-shadow: 7px 7px 15px 0px rgba(10,10,10,0.75);
+    -moz-box-shadow: 7px 7px 15px 0px rgba(10,10,10,0.75);
+    box-shadow: 7px 7px 15px 0px rgba(10,10,10,0.75);
+}
+.panel-primary .panel-heading {
+    background-color: #5797D8;
+    text-align: center;
+    color: #0A0A0A;
+    font-size: 19px;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.form-signin button[type="submit"] {
+    background-color: #5797D8;
+    color: #0A0A0A;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.list-button {
+    background-color: #575757;
+    color: #F5F5F5;
+    margin: 8px;
+}
+.logout-button {
+    background-color: #F55757;
+    color: #0A0A0A;
+    margin: 8px;
+}
+.list-panel {
+    margin: 40px auto;
+    max-width: 700px;
+    min-width: 550px;
+    background-color: #F5F5F5;
+    -webkit-box-shadow: 7px 7px 15px 0px rgba(10,10,10,0.75);
+    -moz-box-shadow: 7px 7px 15px 0px rgba(10,10,10,0.75);
+    box-shadow: 7px 7px 15px 0px rgba(10,10,10,0.75);
+}
+.panel-title {
+    margin: 8px 8px;
+    font-size: 17px;
+}
+.newuser-button {
+    background-color: #575757;
+    color: #F5F5F5;
+    margin: auto;
+}
+.edit-button {
+    background-color: #57D857;
+    color: #0A0A0A;
+    margin: 8px;
+}
+.delete-button {
+    background-color: #F55757;
+    color: #0A0A0A;
+    margin: 8px;
+}
+
