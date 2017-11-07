@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Security WebApp</title>
     <link href="<c:url value='/assets/css/bootstrap.css' />" rel="stylesheet"></link>
     <link href="<c:url value='/assets/css/custom.css' />" rel="stylesheet"></link>

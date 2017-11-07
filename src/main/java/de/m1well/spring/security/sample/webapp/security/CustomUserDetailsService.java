@@ -40,7 +40,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         AppUser appUser = appUserService.findByUsername(username);
-        LOG.info("### appUser: ", appUser);
+        LOG.info("### appUser who wants to login: ", appUser.toString());
         if (appUser == null) {
             LOG.info("### appUser not found");
             throw new UsernameNotFoundException("### username not found");

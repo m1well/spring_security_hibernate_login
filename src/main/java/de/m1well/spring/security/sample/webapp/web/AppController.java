@@ -69,6 +69,24 @@ public class AppController {
     }
 
     /**
+     * rest endpoint provides the login
+     *
+     * @return if user is anonymous the login jsp page - else redirect to the users_list jsp page
+     */
+    @GetMapping(value = "/login")
+    public ModelAndView loginPage() {
+
+        ModelAndView mav = new ModelAndView();
+        if (isCurrentAuthenticationAnonymous()) {
+            mav.setViewName("login");
+        } else {
+            mav.setViewName("redirect:/list");
+        }
+        return mav;
+
+    }
+
+    /**
      * rest endpoint provides registration of a new user
      *
      * @return registration jsp page
@@ -229,24 +247,6 @@ public class AppController {
         ModelAndView mav = new ModelAndView();
         mav.addObject("loggedinuser", getPrincipal());
         mav.setViewName("access_denied");
-        return mav;
-
-    }
-
-    /**
-     * rest endpoint provides the login
-     *
-     * @return if user is anonymous the login jsp page - else redirect to the users_list jsp page
-     */
-    @GetMapping(value = "/login")
-    public ModelAndView loginPage() {
-
-        ModelAndView mav = new ModelAndView();
-        if (isCurrentAuthenticationAnonymous()) {
-            mav.setViewName("login");
-        } else {
-            mav.setViewName("redirect:/list");
-        }
         return mav;
 
     }

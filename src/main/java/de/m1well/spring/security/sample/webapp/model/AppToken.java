@@ -15,7 +15,7 @@ import java.util.Date;
 public class AppToken {
 
     @Id
-    @Column(name = "series", nullable = false, unique = true)
+    @Column(name = "series", nullable = false)
     private String series;
 
     @Column(name = "username", nullable = false)

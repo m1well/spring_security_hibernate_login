@@ -25,6 +25,8 @@ import org.springframework.security.web.authentication.rememberme.PersistentToke
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+    public static final int TOKEN_VALIDITY_SECONDS = 60 * 10; // 10 minutes
+
     @Autowired
     @Qualifier("customUserDetailsService")
     UserDetailsService userDetailsService;
@@ -61,7 +63,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                     .rememberMe().rememberMeParameter("remember-me")
                     .tokenRepository(persistentTokenRepository)
-                    .tokenValiditySeconds(86400)
+                    .tokenValiditySeconds(TOKEN_VALIDITY_SECONDS)
                 .and()
                     .csrf()
                 .and()

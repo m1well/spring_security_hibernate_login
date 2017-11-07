@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Security WebApp</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,6 +24,8 @@
         </div>
 
         <div class="panel-body">
+
+            <c:url var="loginUrl" value="/login" />
 
             <form class="form-signin" action="${loginUrl}" method="post">
 
@@ -47,9 +49,7 @@
                 <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password here" required="">
 
                 <div class="checkbox">
-                    <label>
-                        <input type="checkbox" id="rememberme" name="rememberme" value="remember-me"> Remember me
-                    </label>
+                    <label><input type="checkbox" id="rememberme" name="remember-me"> Remember me (for 10 Minutes)</label>
                 </div>
 
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
