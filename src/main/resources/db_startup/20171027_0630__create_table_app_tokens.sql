@@ -8,9 +8,9 @@ USE securitydb;
 DROP TABLE IF EXISTS app_tokens;
 
 CREATE TABLE app_tokens (
-    series VARCHAR(64) NOT NULL,
-    username VARCHAR(30) NOT NULL,
-    token VARCHAR(64) NOT NULL,
-    last_used TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    PRIMARY KEY (series)
+  series VARCHAR(64) NOT NULL,
+  username VARCHAR(30) NOT NULL,
+  token VARCHAR(64) NOT NULL,
+  last_used TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+  PRIMARY KEY (series)
 ) ENGINE=InnoDB;

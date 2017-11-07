@@ -8,7 +8,7 @@ USE securitydb;
 DROP TABLE IF EXISTS app_authorities;
 
 CREATE TABLE app_authorities (
-   id BIGINT NOT NULL AUTO_INCREMENT,
-   type VARCHAR(20) NOT NULL,
-   PRIMARY KEY (id)
+  id BIGINT NOT NULL AUTO_INCREMENT,
+  type VARCHAR(20) NOT NULL,
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB;
