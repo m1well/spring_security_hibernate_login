@@ -1,6 +1,6 @@
 -- mysql script
 -- author: Michael Wellner
--- date: 18.10.2017
+-- date: 27.10.2017
 
 -- create new app_tokens table @ securitydb
 USE securitydb;
