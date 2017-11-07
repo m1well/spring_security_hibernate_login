@@ -49,7 +49,7 @@
                             <c:choose>
                                 <c:when test="${edit}">
                                     <form:input type="text" path="username" id="username" class="form-control input-sm"
-                                                readonly="readonly"/>
+                                                readonly="true"/>
                                 </c:when>
                                 <c:otherwise>
                                     <form:input type="text" path="username" id="username" class="form-control input-sm"/>
@@ -124,7 +124,7 @@
                                 </c:when>
                                 <c:otherwise>
                                     <form:select path="appAuthorities" items="${appAuthorities}" multiple="true" itemValue="id"
-                                                 itemLabel="type" class="form-control input-sm" readonly="readonly"/>
+                                                 itemLabel="type" class="form-control input-sm" readonly="true"/>
                                     <div class="has-error">
                                         <form:errors path="appAuthorities" class="help-inline"/>
                                     </div>
