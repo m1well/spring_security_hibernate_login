@@ -5,8 +5,8 @@ This is just a sample Spring Security Login WebApp with Hibernate.<br/>
 ## Usage
 * first build the app: `./mvnw clean install`
 * create a database with the startup scripts (i recommend a mysql docker container)
-* then deploy it to a tomcat server
-* start with [http://localhost:8080/security-webapp](http://localhost:8080/security-webapp)
+* then deploy it to the root of a tomcat server
+* start with [http://localhost:8080/](http://localhost:8080/)
 * login with username "scott" and password "scotty123"
 
 ## Screenshots
